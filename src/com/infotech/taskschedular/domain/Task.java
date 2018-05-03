@@ -7,10 +7,13 @@ public class Task {
 	private Integer id;
 	private String title;
 	private String description;
-	private Date startdate;
-	private Date enddate;
+	private String startdate;
+	private String enddate;
 	private Integer userid;
 	private Integer status;
+	
+	
+	
 	public Integer getId() {
 		return id;
 	}
@@ -29,16 +32,18 @@ public class Task {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public Date getStartdate() {
+	
+	public String getStartdate() {
 		return startdate;
 	}
-	public void setStartdate(Date startdate) {
+	public void setStartdate(String startdate) {
 		this.startdate = startdate;
 	}
-	public Date getEnddate() {
+
+	public String getEnddate() {
 		return enddate;
 	}
-	public void setEnddate(Date enddate) {
+	public void setEnddate(String enddate) {
 		this.enddate = enddate;
 	}
 	public Integer getUserid() {
@@ -53,6 +58,13 @@ public class Task {
 	public void setStatus(Integer status) {
 		this.status = status;
 	}
+	@Override
+	public String toString() {
+		return "Task [id=" + id + ", title=" + title + ", description=" + description + ", startdate=" + startdate
+				+ ", enddate=" + enddate + ", userid=" + userid + ", status=" + status + "]";
+	}
+	
+	
 	
 	
 
